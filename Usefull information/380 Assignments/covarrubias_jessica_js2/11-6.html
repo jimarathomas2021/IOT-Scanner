@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>11.6</title>
+	<script type = "text/javascript">
+
+
+	function compareStrings()
+	{
+	   var str1 = document.compare.string1.value;
+	   var str2 = document.compare.string2.value;
+	   
+	   if(str1 > str2)
+	    {
+		   document.compare.output.value = str1 + " is greather than " + str2;
+		}
+	  
+	  else if(str1 < str2)
+		{
+			document.compare.output.value = str1 + " is less than " + str2;
+		}
+	   
+	   else if(str1 == str2)
+		{
+		   document.compare.output.value = str1 + " is equal to " + str2;
+		}
+		else 
+		{
+		   document.write( "Sorry i couldnt understand that, please try again" );
+		}
+		
+	}
+		
+	</script>
+	</head>
+	<body>
+
+		<form name = "compare">
+		<h4>Enter First String</h4>
+		<input name = "string1" type = "text"/>
+		<h4>Enter Second String</h4>
+		<input name = "string2" type = "text"/>
+		<h4>Comparison:  </h4>
+		<input name = "output" type = "text"/>
+		<input type = "button" value = "Compare" onclick = "compareStrings()" />
+		</table>
+		</form>
+	</body>
+</html>

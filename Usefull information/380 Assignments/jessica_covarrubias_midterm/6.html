@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<title>6 Random Selection</title>
+	</head>
+
+	<body>
+	
+	<form onclick="return getRandom()">
+	<input type="text" id="restaurant">
+	<input type="submit" value="Random Selection">
+	</form>
+
+		<script>
+			function getRandom() 
+			{
+				var list = ["Molinas", "Sonic", "Subway", "McDonalds", "Taco Bell", "Pasanos", "Lone Star Eatery", "Chicken Express"];
+				var randomNum = Math.floor(Math.random() * list.length);
+				
+				var input = document.getElementById("restaurant")
+				input.value = list[randomNum];
+				
+				return false;
+			}
+		</script>
+	</body>
+
+</html>

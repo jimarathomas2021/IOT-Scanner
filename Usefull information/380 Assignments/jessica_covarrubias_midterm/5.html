@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head> 
+	<meta charset = "utf-8">
+	<title>Javascript</title>
+	
+	<script type = "text/javascript">
+
+	function calculate() 
+	{
+	
+		var input = window.prompt("Please enter side length for cube: ");
+		var length = parseFloat( input );
+		
+		var pi = 22/7;
+		var cube_volume = length *  length * length;
+		var cube_surface = 6 * length * length;
+		
+		var sphere_volume = (4/3) * pi * (length/2) * (length/2) * (length/2);
+		var sphere_surface = (4) * pi * (length/2) * (length/2);
+		
+		var volume_between = cube_volume - sphere_volume;
+
+		document.getElementById("1").innerHTML = cube_volume;
+		document.getElementById("2").innerHTML = cube_surface;
+		document.getElementById("3").innerHTML = sphere_volume;
+		document.getElementById("4").innerHTML = sphere_surface;
+		document.getElementById("5").innerHTML = volume_between;
+
+	
+	}
+
+
+	</script>
+	</head>
+			
+		<br>
+		Volume of Cube: <p id = "1"></p>
+		Surface Area of Cube : <p id= "2"></p>
+		Volume of Largest Sphere to Fit in Box:<p id="3"></p>
+		Surface Area of Largest Sphere to Fit in Box:<p id="4"></p>
+		Volume of space in Between Cube and Sphere:<p id="5"></p>
+
+		<form name = "calc">
+		<input type = "button" value = "Calculate" onclick = "calculate()" />
+		
+	</body>
+
+</html>

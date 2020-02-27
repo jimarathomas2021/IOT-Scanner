@@ -1,0 +1,23 @@
+<html>
+	<head>
+	<title>Assignment 3-6 </title>
+	<script type="text/javascript">
+	
+	input = prompt("Please Enter An Integer");
+	
+	while (input) 
+	{
+		var value = parseInt(input);
+		document.write(value + (isEven(value) ? " is even" : " is odd") +"<br/>" );
+		input = prompt ("Please type an integer or Click Cancel to terminate the script" );
+	}
+	
+	function isEven (num)
+	{
+		return (num % 2 == 0);
+	}
+	
+	</script>
+	</head>
+	<body></body>
+</html>

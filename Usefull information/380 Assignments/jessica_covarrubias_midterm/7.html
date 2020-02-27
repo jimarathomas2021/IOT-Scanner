@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<body>
+
+	<form action="">
+	Enter Your Weight on Earth:<br>
+	<input type="text" name="earth">
+	<br><br>
+	Mercury:<br>
+	<input type="text" name="mercury">
+	<br>
+	Venus:<br>
+	<input type="text" name="venus">
+	<br>
+	Mars:<br>
+	<input type="text" name="mars">
+	<br>
+	Jupiter:<br>
+	<input type="text" name="jupiter">
+	<br>
+	Saturn:<br>
+	<input type="text" name="saturn">
+	<br>
+	Uranus:<br>
+	<input type="text" name="uranus">
+	<br>
+	Neptune:<br>
+	<input type="text" name="neptune">
+	<br>
+	Pluto:<br>
+	<input type="text" name="pluto">
+	<br>
+	Sun:<br>
+	<input type="text" name="sun">
+	<br>
+	Moon:<br>
+	<input type="text" name="moon">
+	<br>
+	<input type="submit" value="Calculate" id="submit">
+	</form>
+
+	<script>
+		var planetsArray = 
+		[
+			{name: "mercury", weight: 0.378}, 
+			{name: "venus",   weight: 0.907}, 
+			{name: "mars",    weight: 0.377}, 
+			{name: "jupiter", weight: 2.364}, 
+			{name: "saturn",  weight: 0.916}, 
+			{name: "uranus",  weight: 0.889}, 
+			{name: "neptune", weight: 1.125}, 
+			{name: "pluto",   weight: 0.067}, 
+			{name: "sun",     weight: 27.072}, 
+			{name: "moon",    weight: 0.166}
+		]
+
+		submitButton = document.getElementById('submit');
+
+		submitButton.onclick = function (earth) 
+		{
+			earth.preventDefault();
+			var earth = document.getElementsByName('earth')[0];
+		
+			planetsArray.forEach(function (planet) 
+			{
+				var elem = document.getElementsByName(planet.name)[0],
+				weight = planet.weight *+earth.value;
+				elem.value = Math.round(weight);
+			});
+		};
+	</script>
+
+</body>
+</html>

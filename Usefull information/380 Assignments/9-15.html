@@ -1,0 +1,39 @@
+<html>
+	<head>
+	<title>9.15</title>
+	
+	<script type="text/javascript">
+		
+		input = window.prompt("Enter a number or -1 to exit");
+		value = parseFloat(input);
+		var value = parseInt(input);
+		
+		while(input != -1)
+		{
+			document.write(value + (isEven(value) ? " is even" : " is odd") +"<br/>" );
+			input = window.prompt("Enter a number or -1 to exit");
+			var value = parseInt(input);
+		}
+		if (input == -1)
+			{
+				system.exit(0);
+			}
+		
+		function isEven (num)
+		{
+			return (num % 2 ==0);
+			
+		}
+		
+	
+	
+	
+	
+	</script>
+	</head>
+
+
+	<body></body>
+		
+
+</html>

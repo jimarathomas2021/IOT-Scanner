@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--Write a CSS rule that changes the color of all elements containing 
+	attribute class = "green-Move" to green and shifts them down 25 pixels-
+	and right 15 pixels-->
+
+<html>
+	<head> 
+		<meta charset = "utf-8">
+		<title>CSS Rule</title>
+		
+		<style>
+		
+		.green-Move	{	color: green;
+						position: relative;
+						bottom: -25px;
+						right: -15px;
+					}
+		</style>
+	</head>
+		
+	<body>
+		<section>
+		<h1>before (h1)</h1>
+		<h1 class = "green-Move">after (h1)</h1>
+		<br>
+		<p>before (p)</p>
+		<p class = "green-Move">after (p)</p>
+		</section>
+	</body>
+</html>

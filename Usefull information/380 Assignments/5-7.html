@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>  
+		<meta charset = "utf-8">
+		<title>Linear Gradient</title>
+
+		<style = "text/css">
+		div
+		{
+			width: 500px;
+			height: 500px;
+			text-align: center;
+			background: -webkit-gradient
+				(linear, left top, right bottom,
+					color-stop(13%, red),
+					color-stop(20%, orange),
+					color-stop(30%, yellow),
+					color-stop(40%, green),
+					color-stop(50%, blue),
+					color-stop(70%, indigo),
+					color-stop(80%, violet);
+				);
+			background: -moz-linear-gradient
+				(top left,
+					red 13%,
+					orange 20%,
+					yellow 30%, 
+					green 40%,
+					blue 50%,
+					indigo 70%,
+					violet 80%);
+			background: linear-gradient
+				(45 deg,
+					red 13%,
+					orange 20%,
+					yellow 30%, 
+					green 40%,
+					blue 50%,
+					indigo 70%,
+					violet 80%);
+		}
+		
+		
+		
+		
+		</style>
+	</head>
+
+		<body>
+
+			<div><h2>Diagonal Linear Gradient</h2></div>
+			
+			<div id = "angle"><h2>Diagonal Linear Gradient</h2></div>
+
+		</body>
+</html>

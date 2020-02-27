@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>9.18</title>
+      <style type = "text/css">
+         p { margin: 0; }
+      </style>
+      <script>
+
+         var input1 = window.prompt( "Enter first number");
+         var input2 = window.prompt( "Enter second number");
+         var input3 = window.prompt( "Enter third number"); 
+   
+         var value1 = parseFloat( input1 );
+         var value2 = parseFloat( input2 );
+         var value3 = parseFloat( input3 );
+   
+         var minValue = minimum3( value1, value2, value3 );
+
+         document.writeln( "<p>First number: " + value1 + "</p>" +
+            "<p>Second number: " + value2 + "</p>" +
+            "<p>Third number: " + value3 + "</p>" +
+            "<p>Minimum is: " + minValue + "</p>" );
+
+         // minimum3 function definition 
+         function minimum3( x, y, z )               
+         {                                         
+            return Math.min( x, y, z );
+         }                                       
+
+      </script>
+   </head><body></body>
+</html>

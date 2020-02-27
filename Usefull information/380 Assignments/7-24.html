@@ -1,0 +1,59 @@
+
+
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<title>6.24</title>
+	<script type = "text/javascript">
+		<!--
+		
+		 var employee;
+         var hours;
+         var pay = 0.0;
+         var overTime = 0.0;
+         var overHours = 0.0;
+         var grossPay = 0.0;
+		 var employee1;
+		 var rate; 
+		 var rate1;
+		 var timeHalf;
+		   
+		
+
+         employee = window.prompt("Please enter the name of employee");
+		 employee1 = parseInt( employee);
+
+         hours = window.prompt("Please enter the hours Employee 1 worked");
+         hours1 = parseInt( hours);
+		  
+          rate = window.prompt("Please enter the hourly pay of Employee 1");
+          rate1 = parseInt(rate);
+		  
+		  timeHalf = rate1 + (rate1/2);
+
+          
+               if ( hours > 40 )
+               {
+                   overHours = hours1 - 40;
+                   overTime = overHours * timeHalf;
+                   grossPay = hours1 * rate1;
+                   grossPay += overHours;
+				   
+               }
+               else
+               {
+                   grossPay = hours1 * rate1;
+				   document.writeln( "<h1>Employee " + emp + " has a gross pay of " + grossPay + "</h1>" );
+               }
+
+           
+           }
+				document.writeln( "<h1>Employee " + emp + " has a gross pay of " + grossPay + "</h1>" );
+		// -->
+	</script>	
+	</head><body></body>
+</html>
+
+

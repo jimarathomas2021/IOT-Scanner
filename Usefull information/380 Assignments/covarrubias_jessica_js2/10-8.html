@@ -1,0 +1,133 @@
+<!--
+write javascript statements to accomplish each of the following tasks
+(a) display the values of the seventh element in an array f
+(b) initialize each of the five elements of one-dimmensional array g to 8
+(c) total the elemets of array c, which contains 100 numeric elements
+(d) copt 11-element array a into the first portion of array b, which contains 34 elements
+(e) determine and print the smallest and largest values contained in 99-element floating-point array w
+-->
+
+
+<!DOCTYPE html>
+
+
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>10.8</title>
+      <style type = "text/css">
+         p { margin: 0; }
+      </style>
+      <script>
+
+		//(a) display the values of the seventh element in an array f
+		
+			var f = new Array(23, 45, 25, 30, 54, 87, 36, 42, 52, 93);
+			document.write("(a) The seventh element of the array f is " + f[6]);
+			document.write("<br>");
+			document.write("<br>");
+			
+			
+		//(b) initialize each of the five elements of one-dimmensional array g to 8
+		
+			var g = [];
+			document.write("(b) Elements of one-dimmensional array g are ");
+			for(var i = 0; i < 5; i++)
+				{
+					g[i] = 8;
+					
+					document.write(g[i]);
+					document.write("\n");
+				}
+			document.write("<br>");
+			document.write("<br>");
+			
+		//(c) total the elemets of array c, which contains 100 numeric elements
+		
+			var c = new Array(100);
+			var sum = 0;
+			for(var i = 0 ; i < c.length; ++i)
+			{
+				c[i] = i;
+				sum += i;
+				
+			}
+			document.write("(c) The sum of the array c is " + sum);
+			document.write("<br>");
+			
+			
+		//(d) copy 11-element array a into the first portion of array b, which contains 34 elements
+		
+			var a = new Array(11);
+			var b = new Array(34);
+			
+			document.write("<br>");
+			document.write("(d) Copy 11-element array a into the first portion of array b, which contains 34 elements");
+			document.write("<br>");
+			
+			for(var i = 0; i < a.length; ++i) 
+			{
+				a[i] = i*2;
+			}
+			document.write("<br>");
+			document.write("Array A: " + a);
+			document.write("<br>");
+			
+			for(var i = 0; i < b.length; ++i) 
+			{
+				b[i] = i;
+			}
+			document.write("<br>");
+			document.write("Array B: " + b);
+			document.write("<br>");
+			document.write("<br>");
+
+			for(var i = 0; i < a.length; ++i) 
+			{
+				b[i] = a[i];
+			}
+			document.write("New Array B: " + b);
+			document.write("<br>");
+			document.write("<br>");
+			
+			
+		//(e) determine and print the smallest and largest values contained in 99-element floating-point array w
+
+			document.write("(e) Determine and print the smallest and largest values contained in 99-element floating-point array w<br>");
+			document.write("<br>");
+
+			var  w = [99];
+			var smallest;
+			var largest;
+			
+			for(var i = 0; i< 99; i++)
+			{
+				w[i] = i;
+			}
+			
+			smallest = w[0];
+			largest = w[0];
+			
+			for(var i = 1; i<99; i++)
+			{
+				if(w[i] < smallest)
+				{
+					smallest = w[i]
+				}
+				else if (w[i] > largest)
+					{
+						largest = w[i]
+					}
+			}
+			document.write("The smallest value of array w is " + smallest + "<br >");
+			document.write("<br>");
+			document.write("The largest value of array w is " + largest + "<br >");
+			
+
+
+		
+
+         
+      </script>
+   </head><body></body>
+</html>
